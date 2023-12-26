@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- "static/css/main.css" won't work -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <!--Jinja 2 template-->
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <!-- For if else statements and for loops -->
+    {% block body %}{% endblock %}
+</body>
+</html>
